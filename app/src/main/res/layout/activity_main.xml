@@ -290,17 +290,29 @@
                 android:stateListAnimator="@null"
                 android:background="@color/colorWhite"/>
 
-            <Button
-                app:backgroundTint="@null"
-                android:id="@+id/btnEqual"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="="
-                android:textSize="16sp"
                 android:layout_weight="1"
-                android:textColor="@color/colorPurple"
-                android:stateListAnimator="@null"
-                android:background="@color/colorWhite"/>
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnEqual"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_equal_bg"
+                    android:stateListAnimator="@null"
+                    android:text="="
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    app:backgroundTint="@null" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 
