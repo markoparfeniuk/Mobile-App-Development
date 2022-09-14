@@ -9,9 +9,9 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvInput"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:text="4345344"
         android:textSize="50sp"
         android:textColor="@color/colorGray"
         android:ellipsize="start"
@@ -20,9 +20,9 @@
         android:paddingTop="10dp"
         android:paddingLeft="10dp"/>
     <TextView
+        android:id="@+id/tvOutput"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:text="4345344"
         android:textSize="60sp"
         android:textColor="@color/colorWhite"
         android:ellipsize="start"
