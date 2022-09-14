@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.Exception
+import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,7 +42,14 @@ class MainActivity : AppCompatActivity() {
     private fun calculate() {
         try
         {
-
+            val input = ExpressionBuilder(tvInput.text.toString()).build()
+            val output = input.evaluate()
+            val longOutput = output.toLong()
+            if (output == longOutput.toDouble()) {
+                tvOutput.text = longOutput.toString()
+            } else {
+                tvOutput.text = output.toString()
+            }
         }
         catch(e: Exception)
         {
